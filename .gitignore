@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Build output
+.next/
+out/
+dist/
+build/
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Secrets & credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account.json
+secrets/
+
+# Blockchain & crypto
+keystore/
+*.keystore
+wallet.json
+mnemonic.txt
+
+# Claude internal files
+.claude/SESSION_NOTES.md
+.claude/reports/
+.claude/debug.log
+
+# Planning & internal docs
+SESSION_NOTES.md
+PLANNING.md
+SCRATCH.md
+*.scratch.*
+*.draft.*
+
+# IDE & OS
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing
+coverage/
