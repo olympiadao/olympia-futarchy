@@ -17,9 +17,50 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Olympia Futarchy",
+  metadataBase: new URL("https://futarchy.olympiadao.org"),
+  title: {
+    default: "Olympia Futarchy — Prediction Markets for Ethereum Classic",
+    template: "%s | Olympia Futarchy",
+  },
   description:
-    "Prediction markets for Ethereum Classic — futarchy governance powered by market outcomes",
+    "Prediction market governance for Ethereum Classic. Trade on proposal outcomes, resolve via oracles, and settle on-chain.",
+  keywords: [
+    "Ethereum Classic",
+    "ETC",
+    "Olympia",
+    "futarchy",
+    "prediction markets",
+    "governance",
+    "oracles",
+    "ECIP-1117",
+  ],
+  authors: [
+    { name: "Cody Burns", url: "https://github.com/realcodywburns" },
+    { name: "Chris Mercer", url: "https://github.com/chris-mercer" },
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://futarchy.olympiadao.org",
+    siteName: "Olympia Futarchy",
+    title: "Olympia Futarchy — Prediction Markets for Ethereum Classic",
+    description: "Trade on governance outcomes. Futarchy for ETC.",
+    images: [
+      {
+        url: "https://futarchy.olympiadao.org/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Olympia Futarchy Prediction Markets",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Olympia Futarchy — Prediction Markets for Ethereum Classic",
+    description: "Prediction market governance for ETC",
+    images: ["https://futarchy.olympiadao.org/og-image.png"],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({

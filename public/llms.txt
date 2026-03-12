@@ -1,0 +1,33 @@
+# Olympia Futarchy — Prediction Markets for Ethereum Classic
+
+## About
+
+Olympia Futarchy is a prediction market governance application for Ethereum Classic (ETC). It implements futarchy — a governance model where proposals are resolved by market outcomes instead of direct voting. Participants trade on conditional prediction markets, and the market price determines the governance decision.
+
+## Key Features
+
+- Prediction market creation and trading
+- Futarchy governance proposals (ECIP-1117)
+- Oracle integration and resolution
+- On-chain position settlement
+- Conditional market pairs (pass/fail outcomes)
+
+## Technology
+
+- Next.js 16 (App Router)
+- React 19, TypeScript 5
+- wagmi 2 + viem (Ethereum Classic interaction)
+- Tailwind CSS 4
+
+## Network
+
+- Mordor Testnet (Chain ID 63)
+- Demo v0.1
+- Contracts pending deployment from olympia-contracts-futarchy
+
+## Links
+
+- DAO: https://olympiadao.org
+- Treasury: https://olympiatreasury.org
+- Futarchy: https://futarchy.olympiadao.org
+- GitHub: https://github.com/olympiadao
